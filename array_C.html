@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <title> Javascript Array parte 2</title>
+        <meta charset="utf-8"/>
+
+        <script>
+        var mochila=[],pos;
+
+        mochila.push("Faca");
+        mochila.push("Corda");
+        mochila.push("Perdeneira");
+        mochila.push("Chave");
+        mochila.push("Lanterna");
+        mochila.push("Pedra"); 
+
+        //mochila.indexOf("Lanterna");    
+
+        //document.write(mochila.indexOf("Lanterna"));
+
+        pos=mochila.indexOf("Pedra");
+        
+        if(pos < 0){
+            document.write("Item não está na mochila<br>");
+        }else{
+            document.write("Item está na mochila<br>Posição:"+pos);
+        }
+
+       
+        </script>
+
+
+    </head>
+    <body>
+
+
+    </body>
+</html>
