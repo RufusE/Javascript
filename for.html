@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <title> Javascript for</title>
+        <meta charset="utf-8"/>
+
+        <script>
+        /*
+          for(p1;p2;p3){
+              comandos
+          } 
+
+          p1= Inicialização do contador
+          p2= Condição de execução do loop
+          p3= Incremento ou decremento do contador
+        
+        
+
+         var cont; 
+
+         for(cont=0;cont<10;cont++){
+            document.write("Contador<br>");
+         } 
+
+         var num=[];
+         
+         num.push(0);
+         num.push(1);
+         num.push(2);
+         num.push(3);
+         num.push(40);
+
+         for(cont=0; cont<5; cont++){
+             document.write(num[cont] + "<br>");
+         }
+         
+
+         var num=[];
+
+         for(cont=0; cont<5; cont++){
+             num.push(prompt("Digite um número", ""));
+         }
+
+         for(cont=0;cont<5;cont++){
+             document.write(num[cont]+"<br>");
+         }
+         */
+
+         var mochila=[ 
+             ["Corda",1],
+             ["Cura",10],
+             ["Lanterna",1],
+             ["Pilhas",20] 
+        ];
+
+         for(var linha=0;linha<4;linha++){
+             for(var coluna=0;coluna<2;coluna++){
+                document.write(mochila[linha][coluna]+" ");
+             }
+           document.write("<br>"); 
+         }
+
+         
+
+
+        </script>
+
+
+    </head>
+    <body>
+
+
+    </body>
+</html>
