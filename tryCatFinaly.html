@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <title> Javascript Try catch finally</title>
+        <meta charset="utf-8"/>
+
+        <script>
+            /*
+            try{
+                document.writ("JavaScript"); // Erro no .write
+            }catch(er){
+                document.write("ERRO: " + er.message);
+                console.log("Mensagem de erro: " + er.message); 
+            }
+
+            document.write("<hr>");
+
+            num=10;
+
+            try{ 
+                num=10/0
+                document.write("Erro: " + num);
+            }catch(e){
+
+            }
+            
+
+            var num; //Máximo 10
+
+            try{
+                num=prompt("Digite um valor");
+                if(num>10){
+                throw new Error("Valor inválido, valor deve ser igual ou menor a 10<br>");
+                }
+                document.write("Valor: " +num);
+
+            }catch(e){
+                document.write("ERRO: " + e.message);
+            }finally{
+                document.write("<br>Fim do tratamento");
+            }
+            */
+           var num; //Máximo 10
+
+            try{
+                num=prompt("Digite um valor");
+                if(num>10){
+                throw new Error("Valor inválido, valor máximo 10");
+                }
+                
+
+            }catch(e){
+                console.log("ERRO: " + e.message)
+                num=10;
+            }finally{
+                document.write("Valor: " +num);
+            }
+
+        </script>
+
+
+    </head>
+    <body>
+
+
+    </body>
+</html>
