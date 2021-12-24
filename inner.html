@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <title> Javascript Inner</title>
+        <meta charset="utf-8"/>
+
+        <script>
+            
+        </script>
+
+
+    </head>
+    <body>
+
+        <p id="texto">Texto InnerHtml</p>
+         <input type="text" id="cxtexto" value="Javascript texte">
+          <div id="dv">Texto da DIV</div>   
+
+
+        <script>
+            //var cxt=document.getElementById("cxtexto").value;
+            //alert(cxt);
+       
+            
+        var cxt=document.getElementById("cxtexto").value="Curso Javascript";
+        alert(cxt);
+
+        var cxt2=document.getElementById("texto").innerHTML="aula24";
+        document.getElementById("dv").innerHTML="Novo texto";
+        alert(document.getElementById("dv").innerHTML);    
+         
+
+
+        </script>
+
+    </body>
+</html>

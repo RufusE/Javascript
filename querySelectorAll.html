@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <title> Javascript variáveis</title>
+        <meta charset="utf-8"/>
+        <style>
+            .titulo{
+                color:#f00;
+                font-size:20px;
+                text-decoration: underline;
+            }
+        div{
+            border: 1px solid #000;
+            padding: 10px;
+            display: block;
+        } 
+        a{
+            display: block;
+        }   
+            .quadro{
+                background-color:#ddd ;
+            }        
+
+        </style>
+    </head>
+    <body>
+
+        <h1 class="titulo">querySelectAll</h1>
+        <p>O querySelectAll() é um método que retorna os elementos do documento que correspondem a uma classe de CSS ou uma tag específica.</p>
+        <h2 class="titulo">Curso de javascript</h2>
+        <p>www.youtube.com/cfbcursos</p>
+        <p class="titulo">cfbcursos.com</p>
+        <div>
+            <h3>Javascript aula 26 </h3>
+            <p>Este texto está dentro da div</p>
+            <p>Este também</p>
+        </div>
+        <div class="quadro">
+            <h3>Javascript aula 26 </h3>
+            <p>Este texto está dentro da div</p>
+            <p>Este também</p>
+        </div>
+        
+        <a href="http://www.youtube.com/cfbcursos" target="_blank">CANAL</a>
+        <a href="http://cfbcursos.com.br"> SITE</a>
+
+        <hr>
+
+        <script>
+            var elementos=document.querySelectorAll(".titulo");
+              for(var i=0; i<elementos.length;i++){
+                  document.write(elementos[i].innerHTML+"<br>");
+              }
+
+              document.write("<hr>");
+              
+              var elementos=document.querySelectorAll("p.titulo");
+              for(var i=0; i<elementos.length;i++){
+                  document.write(elementos[i].innerHTML+"<br>");
+                
+               document.write("<hr>");
+               
+             var elementos=document.querySelectorAll("div.quadro > p");
+             for(var i=0; i<elementos.length;i++){
+                 elementos[i].style.color="#0a0";
+
+             }  
+
+
+                }
+
+
+
+        </script>
+
+    </body>
+</html>
