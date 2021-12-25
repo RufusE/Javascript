@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <title> Javascript form</title>
+        <meta charset="utf-8"/>
+        <style>
+            label{
+                display: block;
+            }
+            input{
+                display: block;
+            }
+            input[type=submit],label{
+                margin-top: 10px;
+            }
+
+        </style
+    </head>
+    <body>
+
+        <form name="Curso1" id="curso1" action="#" method="post">
+            <label>Nome</label>
+            <input type="text" name="fNome" id="teste" value="Primeiro - 1">
+            <label>Senha</label>
+            <input type="password" name="fSenha" value="123">
+            <input type="submit" name="btEnviar" value="Enviar">
+        </form>
+
+        <form name="Curso2" id="curso2" action="#" method="post">
+            <label>Nome</label>
+            <input type="text" name="fNome" id="teste" value="Segundo - 2">
+            <label>Senha</label>
+            <input type="password" name="fSenha" value="123">
+            <input type="submit" name="btEnviar" value="Enviar">
+        </form>
+
+        <hr>
+        <script>
+           
+            var fm=document.forms.length;
+            document.write(fm);
+          
+            document.write("<br><hr>");
+
+            var fm2=document.forms[0].id;
+            document.write(fm2);
+
+            document.write("<br><hr>");
+
+            var fm3=document.forms.item(1).id;
+            document.write(fm3);
+
+            document.write("<br><hr>");
+            
+            var fm4=document.forms.namedItem("curso1").id;
+            document.write(fm4);
+
+            document.write("<br><hr>");
+
+            var fm5=document.forms.namedItem("curso1").innerHTML;
+            document.write(fm5);
+
+            document.write("<br><hr>");
+            /*elements */
+            var fm6=document.forms["curso1"].elements[0].value;
+            document.write(fm6);
+
+            document.write("<br><hr>");
+
+            var fm7=document.forms["curso1"].elements[1].value;
+            document.write(fm7);
+
+
+        </script>
+
+
+    </body>
+</html>
