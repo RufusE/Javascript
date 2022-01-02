@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <title> Javascript Date</title>
+        <meta charset="utf-8"/>
+
+        <script>
+ /*         
+           var dt = new Date();
+           var diasem = dt.getDay();
+           var dia = dt.getDate(); 
+           var mes = dt.getMonth();
+           var ano = dt.getFullYear(); 
+           
+           var horas = dt.getHours();
+           var minutos = dt.getMinutes();
+           var segundos = dt.getSeconds();
+
+
+
+var meses = new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Agosto","Setembro","Outubro","Novembro","Dezembro");           
+var semanas = new Array("Domingo","Segunda-Feira","Terça-Feira","Quarta-feira","Quinta-Feira","Sexta-Feira","Sabado");
+
+document.write(semanas[diasem] + "," + dia + " de " + meses[mes] + " de " + ano);  
+document.write(semanas[diasem] + ", " + meses[mes] + "<br>");
+document.write(horas + ":" + minutos + ":" + segundos + "<br>");
+
+
+                document.write(dia);
+                document.write("<br>");                
+                document.write(mes);
+                document.write("<br>");
+                document.write(ano);
+                document.write("<br>");
+                document.write(diasem);
+                document.write("<br>");
+                document.write("<br>"); 
+                
+                
+ document.write(diasem + "," + dia + " de " + mes + " de " + ano);               
+ document.write("<br>");
+ document.write(Date()); 
+ document.write("<br>");*/
+
+            var dt = new Date();
+            
+            var ndt = new Date();
+            ndt.setDate(dt.getDate()+2);
+            ndt.setFullYear(dt.getFullYear()-10);
+            ndt.setHours(dt.getHours()-10);
+
+            var diasem=ndt.getDay();
+            var dia=ndt.getDate();
+            var mes=ndt.getMonth();
+            var ano=ndt.getFullYear();
+
+            var horas=ndt.getHours();
+            var minutos=ndt.getMinutes();
+            var segundos=ndt.getSeconds();
+
+        var meses = new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Agosto","Setembro","Outubro","Novembro","Dezembro");           
+        var semanas = new Array("Domingo","Segunda-Feira","Terça-Feira","Quarta-feira","Quinta-Feira","Sexta-Feira","Sabado");
+
+        document.write(semanas[diasem] + "," + dia + " de " + meses[mes] + " de " + ano + "<br>");  
+        document.write(semanas[diasem] + ", " + meses[mes] + "<br>");
+        document.write(horas + ":" + minutos + ":" + segundos + "<br>");    
+
+ 
+        </script>
+
+
+    </head>
+    <body>
+
+
+    </body>
+</html>
