@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<title>  Inner Html  </title>
+<meta charset="utf-8"/>
+
+<script>
+
+</script>
+
+
+</head>    
+<body>
+
+<p>Parágrafo 1</p>
+<p>Parágrafo 2</p>
+<p>Parágrafo 3</p>
+<p>Parágrafo 4</p>
+
+<h2> Primeiro H2  </h2>
+<h2> Segundo H2 </h2>
+<h2> Terceiro H2</h2>
+
+
+<hr/> <!--O elemento HTML <hr> representa uma quebra temática entre elementos de nível de parágrafo--> 
+
+<script>
+
+//  getElementsByTagName 
+//  O retorno da função é um objeto semelhante a um array 
+//  somente para leitura contendo os objetos Element conforme
+//  definido no parâmetro.  
+
+var tagsP = document.getElementsByTagName("p");
+var tagsH = document.getElementsByTagName("h2");
+
+document.write("Resultados: <br><br>");
+
+//<p>
+document.write(tagsP[0].innerHTML + "<br>");
+document.write(tagsP[1].innerHTML + "<br>");
+document.write(tagsP[2].innerHTML + "<br>");
+// <h2>
+document.write(tagsH[0].innerHTML + "<br>");
+document.write(tagsH[1].innerHTML + "<br>");
+document.write(tagsH[2].innerHTML + "<br>");
+document.write("<br>");
+
+var tagsP = document.getElementsByTagName("p") [3];
+document.write(tagsP.innerHTML);
+
+
+var tagsP=document.getElementsByTagName("h2");
+for(var i=0; i<tagsP.length;i++){
+    tagsP[i].style.color="#f00";
+}
+
+
+var tags=document.getElementsByTagName("*");
+tags[7].innerHTML ="Novo texto inserido";
+tags[7].style.color="#f00";
+
+
+
+
+</script>
+</body>
+</html>

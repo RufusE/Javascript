@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<title> getElementsById</title>
+<meta charset="utf-8"/>
+
+<script>
+
+</script>
+
+</head>
+<body>
+ 
+     <p id="texto"> Texto 1 </p>
+     <input type="text" id="cxtexto" value="Javascript texto">
+     <div id="dv"> Texto da div </div>
+
+     <p id="texto2">Texto 2 </p> 
+     <input type="text" id="cxtexto2" value="Bitcoin">
+     <div id="dv1"> Texto da div2</div>
+
+<script>
+
+var cxt=document.getElementById("cxtexto").value="muda texto";
+//alert(cxt);
+
+//var cxt2=document.getElementById("cxtexto2").value="Bitcoin2";
+
+var cxt2=document.getElementById("cxtexto").innerHTML="aula24";
+document.getElementById("dv").innerHTML="Novo texto da div";
+alert(Document.getElementById("dv").innerHTML);
+
+</script>
+</body>
+</html>
