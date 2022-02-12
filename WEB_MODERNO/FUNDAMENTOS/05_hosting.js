@@ -11,5 +11,4 @@ function teste(){
 }
 teste();
 
-let b = 
-console.log('b =', b)
+//let b = console.log('b =', b)
