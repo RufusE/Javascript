@@ -8,3 +8,9 @@
     console.log("Bloco 2");
 
 }
+
+// Bloco vazio
+{
+
+
+}

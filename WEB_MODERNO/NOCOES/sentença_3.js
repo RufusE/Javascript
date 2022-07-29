@@ -3,3 +3,5 @@
 console.log(1+2); //soma
 console.log("Texto");
 console.log('texto2');
+
+// tralha '#' não funcionou como comentário
