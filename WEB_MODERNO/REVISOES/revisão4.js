@@ -20,3 +20,7 @@ console.log(b);
 
 const c = 5;
 console.log(c);
+
+let qualquer = 'Legal';
+console.log(qualquer);
+console.log(typeof qualquer);
